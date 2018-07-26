@@ -1,8 +1,14 @@
 # epg-ggly
 
-> A Vue.js project
+> 基于vue2.0+vue-router做的一个果果乐园demo
 
-## Build Setup
+## 功能说明
+
+- 主要是对果果乐园的首页，展示页，详情页，播放页实现了简单的功能
+    - 对果果乐园代码整理成模块化，方面进行打包压缩
+    - 对滚屏模块进行了优化
+
+## 安装步骤
 
 ``` bash
 # install dependencies
