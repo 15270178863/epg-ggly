@@ -1,0 +1,474 @@
+body {
+	margin: 0;
+    padding: 0;
+    background: transparent no-repeat;
+    width: 1280px;
+    height: 720px;
+    color: #000000;
+    overflow: hidden;
+    font-family: Arial,'Microsoft Yahei';
+}
+.sub_wrapper {
+	position: absolute;
+	left: 0px; top: 0px; width: 1280px; height: 720px;
+	background-image: url(../images/sub_body_bg.png)
+}
+/*视频播放框*/
+#video {
+	position: absolute; overflow: hidden;
+	left: 47px; top: 37px; width: 444px; height: 253px;
+}
+.videoInfo {
+	position: absolute;
+	left: 2px; top: 214px; width: 438px; height: 36px;
+	background-color: rgba(0,0,0,0.5); border-radius: 0px 0px 9px 9px; 
+}
+.videoImage {
+	position: absolute;
+	left: 14px; top: 7px; width: 24px; height: 23px;
+	background-image: url(../images/grade/videoImage.png);
+}
+#currentSerierNum {
+	position: absolute; white-space: nowrap;
+	margin-left: 0px; margin-top: 7px; width: auto;
+	font-size: 21px; font-weight: 500; font-family: "黑体"; color: #FFFFFF;
+}
+.currentSeriesName {
+	position: absolute;
+	left: 50px; top: 0px; width: 376px; height: 36px; overflow: hidden;
+}
+.btn_focus_video {
+	background-image: url(../images/video_focus.png);	
+}
+/*剧集名称*/
+#series_name {
+	position: absolute;
+	left: 515px; top: 37px; width: 750px; height: 40px; overflow: visible;
+}
+#series_name > div {
+	position: relative; float: left;
+	font-size: 28px; font-weight: 900; font-family: "黑体"; color: #FFFFFF;
+}
+#series_name > span {
+	position: relative; float: left;
+	margin-left: 7px;
+	font-size: 28px; font-weight: 900; font-family: "黑体"; color: #ff9800;
+}
+#averageScore {
+	position: relative; float: left;
+	margin-left: 500px; margin-top: 5px; width: auto; height: 40px;
+	background-color: #09D9FF
+}
+#seriesTags {
+	position: absolute;
+	left: 505px; top: 157px; width: 382px; height: 48px; overflow: hidden;
+}
+.seriesTags {
+	position: absolute;
+	left: 0px; top: 0px; width: 380px; height: 48px; overflow: inherit;
+}
+.seriesTags > div {
+	position: relative; float: left;
+	min-width: 31px; height: 27px; line-height: 27px; margin-left: 10px; margin-top: 7px;
+	background-color: rgba(0,0,0,0.3); font-weight: 550;
+	border-radius: 14px 0px; padding: 0px 10px;
+	text-align: center; font-family: unset; color: #FFFFFF;
+}
+/*剧集简介*/
+#series_intro {
+	position: absolute; overflow: hidden;
+	left: 516px; top: 197px; width: 355px; height: 26px; line-height: 30px;
+	font-size: 20px; font-family: "黑体"; color: #E1DEF9;
+}
+/*播放按钮*/
+.play {
+	position: absolute;
+	left: 515px; top: 197px; width: 138px; height: 41px;
+	background-image: url(../images/play_blur.png);
+}
+/*播放字体*/
+#play {
+	position: absolute;
+	left: 0px; top: 0px; width: 159px; height: 41px; line-height: 41px; padding-left: 45px;
+	text-align: center; font-size: 24px; color: #FFFFFF; font-family: "黑体";
+}
+/*收藏按钮*/
+.fav {
+	position: absolute;
+	left: 515px; top: 238px; width: 138px; height: 43px;
+	background-image: url(../images/fav_blur_1.png);
+}
+/*订购按钮*/
+.order {
+	position: absolute;
+	left: 688px; top: 238px; width: 139px; height: 43px;
+	background-image: url(../images/order_blur_1.png);
+}
+.btn_focus_series {
+	position: absolute;
+	left: -3px; top: -3px; width: 145px; height: 49px;
+	background-image: url(../images/series_focus.png);
+}
+
+
+/*子集页码*/
+.subSeriesPage {
+	position: absolute;
+	left: 0px; top: 302px; width: 1280px; height: 29px;
+}
+#subSeriesPageTotal {
+	position: absolute;
+	left: 44px; top: 0px; width: 1190px; height: 29px; overflow: hidden;
+}
+.subSeriesPageTotal {
+	position: absolute;
+	left: 0px; top: 0px; width: 10000px; height: 29px;
+}
+.subSeriesPageTotal > div {
+	position: relative; float: left;
+	width: 85px; height: 29px; line-height: 29px;
+	text-align: center; font-size: 18px; font-family: "黑体"; color: #FFFFFF;
+}
+.subSeriesPageTotal > div.focusSeriesPage {
+	color: #FFF000;
+}
+/*子集页码选中效果*/
+.btn_focus_subSeriesPage {
+	background-image: url(../images/subSeriesPage_focus.png);	
+}
+
+
+/*子集集*/
+.subSeries {
+	position: absolute;
+	left: 0px; top: 323px; width: 1280px;
+}
+#subSeriesImgAndTxt {
+	position: absolute; visibility: hidden;
+	left: 0px; top: 58px; width: 1280px; height: 174px;overflow: visible;
+}
+#subSeriesBgImage {
+	position: absolute;
+	left: 0px; top: 21px; width: 171px; height: 140px; z-index: 2;
+	background-image: url(../images/series_buttom.png);	
+}
+#subSeriesRealImg {
+	position: absolute;
+	left: 9px; top: 20px; width: 153px; height: 87px;
+	background-position: -3px 0px;
+}
+#subSeriesText {
+	position: absolute;
+	margin-left: 9px; margin-top: 107px;
+	height: 32px; width: 153px; overflow: hidden;	
+}
+#subSeriesTextChild {
+	position: absolute; white-space: nowrap; visibility: hidden;
+	height: 26px; width: auto; margin-top: 4px; margin-left: 0px;
+	font-size: 18px; font-family: "microsoft yahei"; color: #FFFFFF;
+}
+#subSeriesTextChild_1 {
+	position: absolute; white-space: nowrap; visibility: hidden;
+	height: 26px; width: 153px; margin-top: 4px; margin-left: 0px; text-align: center;
+	font-size: 18px; font-family: "microsoft yahei"; color: #FFFFFF;
+}
+/*.tempImgUrl {
+	position: absolute;
+	top: 30px;
+	visibility: hidden;
+}*/
+#subSeriesTotal {
+	position: absolute;
+	left: 42px; top: 0px; width: 1191px; height: 80px; overflow: hidden;
+}
+.subSeriesTotal {
+	position: absolute;
+	left: 15px; top: 18px; width: 40000px; height: 41px;
+}
+.subSeriesTotal > div {
+	position: relative; float: left;
+	width: 56px; height: 41px; line-height: 41px; margin-right: 9px;
+	text-align: center; font-size: 22px; font-family: "黑体"; color: #FFFFFF;
+	background-image: url(../images/subSeries_bg.png);
+}
+.subSeriesBubble {
+	position: relative; float: left; visibility: hidden;
+	width: 200px; height: 200px; margin-left: -59px;margin-top: 40px;
+	background-image: url(../images/series_buttom.png);
+}
+.subSeriesTotal > div:nth-child(18n+18) {
+	margin-right: 15px;
+}
+.subSeriesDiv {
+	position: absolute; visibility: hidden;
+	left: -59px; top: 56px; width: 171px; height: 140px; z-index: 2;
+	background-image: url(../images/series_buttom.png);	
+}
+.subSeriesDivImg {
+	position: absolute;
+	left: 9px; top: 20px; width: 153px; height: 87px;
+	background-position: -3px 0px;
+}
+.subSeriesTxtParent {
+	position: absolute;
+	left: 9px; top: 109px; width: 154px; height: 31px; overflow: hidden;
+}
+.subSeriesDivTxt {
+	position: absolute; white-space: nowrap;
+	left: 20px; top: 103px; width: 130px; overflow: hidden;
+	font-size: 20px; font-family: "microsoft yahei"; color: #FFFFFF;
+}
+
+/*子集集选中效果*/
+.btn_focus_subSeries {
+	position: absolute;
+	left: -15px; top: -18px; width: 85px; height: 77px; line-height: 70px;
+	text-align: center; font-size: 22px; font-family: "黑体"; color: #000000;	
+	background-image: url(../images/subSeries_focus.png); z-index: 2;
+}
+#subSeriesLeft {
+	position: absolute; visibility: hidden;
+	left: 24px; top: 24px; width: 17px; height: 25px;
+	background-image: url(../images/left.png);
+}
+#subSeriesRight {
+	position: absolute; visibility: hidden;
+	right: 24px; top: 24px; width: 17px; height: 25px;
+	background-image: url(../images/right.png);
+}
+
+
+
+/*推荐信息名称*/
+.recommend_name {
+	position: absolute;
+	left: 55px; top: 400px; width: 300px;
+	font-size: 20px; font-family: "黑体"; color: #E1DEF9;	
+}
+/*推荐位集合*/
+#recommends3 {
+	position: absolute;
+	left: 0px; top: 405px; width: 1280px; height: 300px; overflow: hidden;	
+}
+.recommends3 {
+	position: absolute;
+	left: 49px; top: 39px; width: 10000px; height: 246px;
+}
+.recommends3 > div {
+	position: relative; float: left;
+	width: 176px; height: 246px; margin-right: 16px; border-radius: 7px;
+	background-size: 176px 246px;
+}
+.recommend_scale {
+	transform: scale(1.05); -webkit-transform: scale(1.05); -moz-transform: scale(1.05);	
+}
+.recommend_scalexxx {
+	transform: scale(1.05,1.01);	
+}
+.recommend_txt {
+	position: absolute; overflow: hidden;
+	left: 0px; bottom: 0px; width: 100%; height: 37px; line-height: 37px;
+	border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
+	text-align: center; font-size: 20px; color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+/*推荐位选中效果*/
+.btn_focus_recommend {
+	position: absolute;
+	left: -9px; top: -26px; width: 194px; height: 277px;
+	background-image: url(../images/recommend_focus.png);
+}
+.radar {
+	position: absolute;
+	left: 900px; top: 40px; height: 259px; width: 309px;
+}
+#grads {
+	position: absolute;
+	left: 513px; top: 82px; width: 358px; height: 75px;
+}
+#grads_bg {
+	position: absolute;
+	left: 8px; top: 4px; width: 327px; height: 39px;
+	background-image: url(../images/grade/grade_bg.png)
+}
+#grad_1.btn_focus_grad_1 {
+	position: absolute;
+	left: 2px; top: 1px; width:47px; height: 47px;
+	background-image: url(../images/grade/grade_0.png);
+}
+#grad_2.btn_focus_grad_2 {
+	position: absolute;
+	left: 72px; top: 1px; width: 47px; height: 47px;
+	background-image: url(../images/grade/grade_1.png);
+}
+#grad_3.btn_focus_grad_3 {
+	position: absolute;
+	left: 147px; top: 1px; width: 47px; height: 47px;
+	background-image: url(../images/grade/grade_2.png);
+}
+#grad_4.btn_focus_grad_4 {
+	position: absolute;
+	left: 221px; top: 1px; width: 47px; height: 47px;
+	background-image: url(../images/grade/grade_3.png);
+}
+#grad_5.btn_focus_grad_5 {
+	position: absolute;
+	left: 291px; top: 1px; width: 47px; height: 47px;
+	background-image: url(../images/grade/grade_4.png);
+}
+.gradeNum {
+	margin-left: 9px;
+	color: #FFFFFF;
+}
+#otherGrad_1 {
+	position: absolute;
+	left: 2px; top: 51px; width: 47px; height: 21px;
+	background-image: url(../images/grade/grade_bg0.png);
+}
+#otherGrad_2 {
+	position: absolute;
+	left: 73px; top: 51px; width: 47px; height: 21px;
+	background-image: url(../images/grade/grade_bg0.png);
+}
+#otherGrad_3 {
+	position: absolute;
+	left: 147px; top: 51px; width: 47px; height: 21px;
+	background-image: url(../images/grade/grade_bg0.png);
+}
+#otherGrad_4 {
+	position: absolute;
+	left: 222px; top: 51px; width: 47px; height: 21px;
+	background-image: url(../images/grade/grade_bg0.png);
+}
+#otherGrad_5 {
+	position: absolute;
+	left: 291px; top: 51px; width: 47px; height: 21px;
+	background-image: url(../images/grade/grade_bg0.png);
+}
+.order_dialog {
+	position: absolute; visibility: hidden;
+	left: 0px; top: 0px; width: 1280px; height: 720px;z-index:3;
+	background-image: url(../images/grade/common_dialog.png);
+}
+.tips1 {
+	position: absolute;
+	left: 534px; top: 226px;
+	font-size: 32px; font-family: "microsoft yahei";
+	color: #f8e3ff; font-weight: bold;
+}
+.tips2 {
+	position: absolute;
+	left: 447px; top: 327px;
+	width: 411px; height: auto;
+	font-size: 24px; font-family: "microsoft yahei";
+	color: #f8e3ff; text-align: center;
+}
+#to_order {
+	position: absolute;
+	left: 567px; top: 482px;
+	width: 141px; height: 54px;
+	background-image: url(../images/grade/to_order.png);
+}
+.btn_focus_to_order {
+	position: absolute;
+	left: -2px; top: -2px;
+	width: 145px; height: 58px;
+	background-image: url(../images/grade/to_order_focus.png);
+}
+.success_grade {
+	position: absolute; visibility: hidden;
+	left: 0px; top: 0px; width: 1280px; height: 720px; z-index: 3;
+	background-image: url(../images/grade/common_dialog.png);
+}
+.successTips1 {
+	position: absolute;
+	left: 572px; top: 226px;
+	font-size: 32px; font-family: "microsoft yahei";
+	color: #f8e3ff; font-weight: bold;
+}
+.goldNum {
+	position: absolute; visibility: hidden;
+	left: 566px; top: 479px;
+	width: 134px; height: 64px;
+	background-image: url(../images/grade/gold.png);
+}
+.successTips2 {
+	position: absolute;
+	left: 539px; top: 333px;
+	width: auto; height: auto;
+	font-size: 24px; font-family: "microsoft yahei"; color: #F8E3FF;
+}
+.allTips {
+	position: absolute;
+	left: 492px; top: 378px;
+	width: 400px; height: 50px; overflow: visible;
+}
+.successTips3 {
+	position: relative; float: left;
+	width: auto; height: 50px; margin-left: 12px;
+	font-size: 24px; font-family: "microsoft yahei"; color: #F8E3FF;
+}
+#successTips4 {
+	position: relative; float: left;
+	width: auto; height: 50px; margin-left: 5px;
+	font-size: 24px; font-family: "microsoft yahei"; color: #f5e516;
+}
+.successTips5 {
+	position: relative; float: left;
+	width: auto; height: 50px; margin-left: 5px;
+	font-size: 24px; font-family: "microsoft yahei"; color: #F8E3FF;
+}
+#en_ok.btn_focus_en_ok {
+	position: absolute; visibility:hidden;
+	left: 0px; top: 0px; width:12px; height: 12px;
+	background-image: url(../images/spacer.gif);
+}
+/* .butttomSeriesScore {
+	position: absolute; 
+	left: 127px; top:186px;
+	width: 49px; height: 23.5px;
+    border-bottom: 23px solid rgba(0, 0, 0, 0.6);
+    border-left: 9px solid transparent;
+}
+.butttomSeriesScore_score {
+	position: relative;
+	font-size: 18px; font-weight: 500; color: #ffb400;
+	width:100%; text-align: center; margin-top: 2px
+}  */
+.butttomSeriesScore {
+	position: absolute;
+	left: 124px; top: 186px; width: 52px; height: 23px;
+	background-image: url(../images/grade/scoreBg.png);
+}
+.butttomSeriesScore_score {
+	position: relative;
+	width:100%; margin-left: 14px; margin-top: 3px;
+	font-size: 18px; font-weight: 500; color: #ffb400;
+}
+.seriesIsNew {
+	position: absolute;
+	left: 0px; top: 0px;width: 74px; height: 78px;
+	background-image: url(../images/grade/newRecommond.png);
+}
+.marquee {
+	position: absolute;
+	left: 0px; top: 0px; width: 360px; margin-left: 10px; overflow: hidden;
+}
+.marquee > div {
+	position: relative; 
+	left: 0px; top: 0px; width: 1000px;
+}
+
+.marquee div div {
+	position: relative; display: inline-block;
+}
+.radar_1 {
+	position: absolute;
+	left: 940px; top: 58px; height: 202px; width: 234px;
+	background-image: url(../images/radar/spiderNet.png);
+}
+#canvas {
+	position: absolute;
+	height: 370px; width: 370px;
+	left: 857px; margin-top: -41px;
+}

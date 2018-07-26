@@ -1,0 +1,357 @@
+body {
+	margin: 0;
+    padding: 0;
+    background: transparent no-repeat;
+    width: 1280px;
+    height: 720px;
+    color: #000000;
+    overflow: hidden;
+    font-family: Arial,'Microsoft Yahei';
+}
+.wrapper {
+	position: absolute;
+	left: 0px; top: 0px; width: 1280px; height: 720px;
+	background-image: url(../images/body_bg.jpg)
+}
+
+.logo {
+	position: absolute;
+	left: 35px; top: 11px; width: 101px; height: 106px;
+	background-image: url(../images/ggly_logo.png);
+}
+
+/*首页导航菜单*/
+.navs {
+	position: absolute;
+	left: 196px; top: 23px; width: 817px; height: 64px;
+}
+.navs > div {
+	position: relative; float: left;
+	width: 66px; height: 64px; margin-right: 36px;
+}
+#nav_bg {
+	position: absolute;
+	left: 102px; top: 0px; width: 66px; height: 64px;
+	background-image: url(../../ott_home/images/nav/nav_bg.png);
+}
+.navs > div:nth-child(9n+2) {
+	background-image: url(../../ott_home/images/nav/nav_0.png);
+}
+.navs > div:nth-child(9n+3) {
+	background-image: url(../../ott_home/images/nav/nav_1.png);
+}
+.navs > div:nth-child(9n+4) {
+	background-image: url(../../ott_home/images/nav/nav_2.png);
+}
+.navs > div:nth-child(9n+5) {
+	background-image: url(../../ott_home/images/nav/nav_3.png);
+}
+.navs > div:nth-child(9n+6) {
+	background-image: url(../../ott_home/images/nav/nav_4.png);
+}
+.navs > div:nth-child(9n+7) {
+	background-image: url(../../ott_home/images/nav/nav_5.png);
+}
+.navs > div:nth-child(9n+8) {
+	background-image: url(../../ott_home/images/nav/nav_6.png);
+}
+.navs > div:nth-child(9n+9) {
+	background-image: url(../../ott_home/images/nav/nav_7.png);
+}
+.nav_txt {
+	position: absolute;
+	left: 0px; top: 70px; width: 100%; height: 30px;
+	font-family: "黑体"; font-size: 24px; text-align: center; color: #fff;	
+}
+.btn_focus_nav {
+	position: absolute;
+	left: 0px; top: 0px; width: 66px; height: 64px;
+	background-image: url(../../ott_home/images/nav/nav_focus.png);
+}
+
+
+/*右上角导航*/
+#nav2 {
+	position: absolute;
+	left: 1019px; top: 43px; width: 240px;
+}
+#nav2 > div {
+	position: relative; float: left;
+	width: 54px; height: 54px; margin-right: 4px;
+}
+#nav2 > div:nth-child(4n+1) {
+	background-image: url(../../ott_home/images/nav2/order.png);
+}
+#nav2 > div:nth-child(4n+2) {
+	background-image: url(../../ott_home/images/nav2/search.png);
+}
+#nav2 > div:nth-child(4n+3) {
+	background-image: url(../../ott_home/images/nav2/history.png);
+}
+#nav2 > div:nth-child(4n+4) {
+	background-image: url(../../ott_home/images/nav2/fav.png);
+}
+.btn_focus_nav_order {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../../ott_home/images/nav2/order_focus.png);
+}
+.btn_focus_nav_search {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../../ott_home/images/nav2/search_focus.png);
+}
+.btn_focus_nav_history {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../../ott_home/images/nav2/history_focus.png);
+}
+.btn_focus_nav_fav {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../../ott_home/images/nav2/fav_focus.png);
+}
+
+/*设置左侧菜单背景*/
+#side_bg {
+	position: absolute;
+	left: 0px; top: 118px; width: 270px; height: 602px;
+	background-image: url(../images/side/side_animation_bg.png);
+}
+/*.ggly_iptv_animation {
+	background-image: url(../images/side/side_animation_bg.png);
+}
+.ggly_iptv_puzzle {
+	background-image: url(../images/side/side_puzzle_bg.png);
+}
+.ggly_iptv_story {
+	background-image: url(../images/side/side_story_bg.png);
+}
+.ggly_iptv_song {
+	background-image: url(../images/side/side_song_bg.png);
+}
+.ggly_iptv_early {
+	background-image: url(../images/side/side_early_bg.png);
+}
+.ggly_iptv_more {
+	background-image: url(../images/side/side_more_bg.png);
+}*/
+
+/*菜单容器*/
+#sides {
+	position: absolute;
+	left: 77px; top: 84px; width: 123px; height: 276px; overflow: hidden;
+}
+
+.sides {
+	position: absolute;
+	left: 0px; top: 0px; width: 123px; height: 3000px;
+}
+/*对菜单中每一项设置样式*/
+.sides span {
+	position: relative; display: block;
+	width: 123px; height: 36px; margin-bottom: 10px;
+}
+.sides .animation {
+	background-image: url(../images/side/txt_animation_bg.png);	
+}
+.sides .puzzle {
+	background-image: url(../images/side/txt_puzzle_bg.png);
+}
+.sides .story {
+	background-image: url(../images/side/txt_story_bg.png);
+}
+.sides .song {
+	background-image: url(../images/side/txt_song_bg.png);
+}
+.sides .early {
+	background-image: url(../images/side/txt_early_bg.png);
+}
+.sides .more {
+	background-image: url(../images/side/txt_more_bg.png);
+}
+.sides span.side_focus {
+	background-image: url(../images/side/txt_focus_bg.png);
+}
+
+/*对菜单文本进行设置样式*/
+.side_txt {
+	position: absolute;
+	left: 0px; top: 0px; width: 123px; height: 36px; line-height: 36px;
+	text-align: center; font-family: "黑体"; font-size: 24px; color: #FFFFFF;
+}
+/*菜单被选中的样式*/
+.btn_focus_side {
+	background-image: url(../images/side/side_focus.png);
+}
+/*是否还有更多菜单项*/
+#side_more {
+	position: absolute;
+	left: 125px; top: 367px; width: 26px; height: 17px;
+	background-image: url(../images/side/down.png);
+}
+
+/*大推荐位样式*/
+#recommend_big {
+	position: absolute;
+	left: 279px; top: 152px; width: 582px; height: 278px;
+}
+.btn_focus_recommend_big2 {
+	background-image: url(../images/recommend_big_focus.png);	
+}
+/*每个大推荐位样式*/
+#recommend_big span {
+	position: absolute; visibility: hidden;
+	left: 9px; top: -18px; width: 564px; height: 291px;
+}
+#recommend_big span.recommend_big_show {
+	visibility: visible;
+}
+/*标识有多少推荐位缩影*/
+#recommend_big ul {
+	position: absolute; padding: 0px; margin: 0px;
+	left: 486px; top: 240px; width: 100px;
+}
+#recommend_big li {
+	position: relative; display: inline-block;
+	width: 22px; height: 22px; margin-right: 4px;
+	background-image: url(../images/recommend_dian_blur.png);
+}
+#recommend_big li.recommend_dian {
+	width: 26px; height: 26px; margin-top: -2px;
+	background-image: url(../images/recommend_dian_focus.png);
+}
+/*.recommend_big_txt {
+	position: absolute; overflow: hidden;
+	left: 9px; bottom: 5px; width: 564px; height: 40px; line-height: 40px;
+	border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
+	text-align: center; font-size: 20px; color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+}*/
+
+
+/*大家都爱看样式*/
+.djdak_title {
+	position: absolute;
+	left: 951px; top: 123px; width: 188px; height: 46px;
+	/*background-image: url(../images/djdak_title.png);*/
+}
+
+.djdak {
+	position: absolute;
+	left: 865px; top: 178px; width: 368px; height: 247px;
+	/*background-image: url(../images/djdak_bg.png);*/
+}
+#djdak {
+	position: absolute;
+	left: 5px; top: 5px; width: 358px; height: 240px;
+}
+#djdak > div {
+	position: relative;
+	width: 358px; height: 47px; 
+}
+.djdak_txt {
+	position: absolute; overflow: hidden;
+	left: 50px; top: 0px; width: 260px; height: 47px; line-height: 47px;
+	font-family: "黑体"; font-size: 24px; color: #F3D464;
+}
+.btn_focus_djdak {
+	background-image: url(../images/djdak_focus.png);	
+}
+
+/*精选推荐的推荐信息*/
+#recommends2 {
+	position: absolute;
+	left: 290px; top: 440px; width: 960px;
+}
+#recommends2 > div {
+	position: relative; float: left;
+	width: 176px; height: 246px; margin-right: 16px; border-radius: 7px;
+	background-size: 176px 246px;
+}
+.btn_focus_recommend {
+	position: absolute;
+	left: -9px; top: -26px; width: 194px; height: 277px;
+	background-image: url(../images/recommend_focus.png);
+}
+
+.recommend_txt {
+	position: absolute; overflow: hidden;
+	left: 0px; bottom: 0px; width: 100%; height: 37px; line-height: 37px;
+	border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
+	text-align: center; font-size: 20px; color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*其它菜单项推荐的信息*/
+#label_recommends {
+	position: absolute; overflow: hidden;
+	left: 272px; top: 117px; width: 990px; height: 588px;
+}
+.label_recommends {
+	position: absolute;
+	left: 18px; top: 39px; width: 960px; height: 10000px;
+}
+.label_recommend_scale {
+	transform: scale(1.05); -webkit-transform: scale(1.05); -moz-transform: scale(1.05);
+}
+.label_recommends > div {
+	position: relative; float: left;
+	width: 176px; height: 246px; margin: 0px 16px 40px 0px; border-radius: 7px;
+	background-size: 176px 246px;
+}
+
+.tag_new {
+	position: absolute;
+	left: 0px; top: 0px; width: 84px; height: 84px;
+	background: url(../images/new.png) no-repeat;
+}
+.tag_score {
+	position: absolute;
+	left: 124px; top: 186px; width: 52px; height: 23px;
+	background-image: url(../images/score.png);
+}
+.score_txt {
+	position: absolute;overflow: hidden;
+	left: 5px; top: 1px; width: 47px; height: 23px;
+	text-align: center; font-size: 18px;color: #ffb400;
+}
+.label_recommend_txt {
+	position: absolute; overflow: hidden;
+	left: 0px; bottom: 0px; width: 100%; height: 37px; line-height: 37px;
+	border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
+	text-align: center; font-size: 20px; color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.btn_focus_label_recommend {
+	position: absolute;
+	left: -9px; top: -26px; width: 194px; height: 277px;
+	background-image: url(../images/recommend_focus.png);
+}
+
+
+
+/*向下箭头*/
+#recommend_down {
+	position: absolute;
+	left: 727px; top: 680px; width: 74px; height: 40px;
+	background-image: url(../images/down.gif);
+}
+
+
+
+
+/*大家都爱看滚动文本一些样式*/
+.marquee {
+	position: absolute;
+	left: 0px; top: 0px; width: 260px; margin-left: 10px; overflow: hidden;
+}
+.marquee > div {
+	position: relative; 
+	left: 0px; top: 0px; width: 1000px;
+}
+
+.marquee div div {
+	position: relative; display: inline-block;
+}

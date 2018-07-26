@@ -1,0 +1,330 @@
+body {
+	margin: 0;
+    padding: 0;
+    background: transparent no-repeat;
+    width: 1280px;
+    height: 720px;
+    color: #000000;
+    overflow: hidden;
+    font-family: Arial,'Microsoft Yahei';
+}
+.wrapper {
+	position: absolute;
+	left: 0px; top: 0px; width: 1280px; height: 720px;
+	background-image: url(../images/body_bg_all.jpg);
+}
+
+.logo {
+	position: absolute;
+	left: 35px; top: 11px; width: 101px; height: 106px;
+	background-image: url(../images/ggly_logo.png);
+}
+
+.EPG_PATH {
+	position: absolute;overflow: hidden;
+	left: 1000px; top: 100px; width: 260px; height: 30px;
+	font-family: "黑体"; font-size: 28px;color: #FFFFFF;
+}
+
+/*首页导航菜单*/
+.navs {
+	position: absolute;
+	left: 196px; top: 23px; width: 817px; height: 64px;
+}
+.navs > div {
+	position: relative; float: left;
+	width: 66px; height: 64px; margin-right: 36px;
+}
+#nav_bg {
+	position: absolute;
+	left: 0px; top: 0px; width: 66px; height: 64px;
+	background-image: url(../images/nav/nav_bg.png);
+}
+.navs > div:nth-child(9n+2) {
+	background-image: url(../images/nav/nav_0.png);
+}
+.navs > div:nth-child(9n+3) {
+	background-image: url(../images/nav/nav_1.png);
+}
+.navs > div:nth-child(9n+4) {
+	background-image: url(../images/nav/nav_2.png);
+}
+.navs > div:nth-child(9n+5) {
+	background-image: url(../images/nav/nav_3.png);
+}
+.navs > div:nth-child(9n+6) {
+	background-image: url(../images/nav/nav_4.png);
+}
+.navs > div:nth-child(9n+7) {
+	background-image: url(../images/nav/nav_5.png);
+}
+.navs > div:nth-child(9n+8) {
+	background-image: url(../images/nav/nav_6.png);
+}
+.navs > div:nth-child(9n+9) {
+	background-image: url(../images/nav/nav_7.png);
+}
+.nav_txt {
+	position: absolute;
+	left: 0px; top: 70px; width: 100%; height: 30px;
+	font-family: "黑体"; font-size: 24px; text-align: center; color: #fff;	
+}
+.btn_focus_nav {
+	position: absolute;
+	left: 0px; top: 0px; width: 66px; height: 64px;
+	background-image: url(../images/nav/nav_focus.png);
+}
+
+
+/*右上角导航*/
+#nav2 {
+	position: absolute;
+	left: 1019px; top: 43px; width: 240px;
+}
+#nav2 > div {
+	position: relative; float: left;
+	width: 54px; height: 54px; margin-right: 4px;
+}
+#nav2 > div:nth-child(4n+1) {
+	background-image: url(../images/nav2/order.png);
+}
+#nav2 > div:nth-child(4n+2) {
+	background-image: url(../images/nav2/search.png);
+}
+#nav2 > div:nth-child(4n+3) {
+	background-image: url(../images/nav2/history.png);
+}
+#nav2 > div:nth-child(4n+4) {
+	background-image: url(../images/nav2/fav.png);
+	/**background-image: url(../images/nav2/mobile.png);*/
+}
+.btn_focus_nav_order {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../images/nav2/order_focus.png);
+}
+.btn_focus_nav_search {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../images/nav2/search_focus.png);
+}
+.btn_focus_nav_history {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../images/nav2/history_focus.png);
+}
+.btn_focus_nav_fav {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../images/nav2/fav_focus.png);
+}
+
+.btn_focus_nav_fav_moblie {
+	position: absolute;
+	left: -5px; top: -7px; width: 64px; height: 83px;
+	background-image: url(../images/nav2/mobile_focus.png); 
+}
+
+/*全部推荐位样式*/
+#recommends {
+	position: absolute;
+	left: 0px; top: 123px; width: 1280px; height: 420px; overflow: hidden;	
+}
+#recommends .recommends {
+	position: absolute;
+	left: 29px; top: 0px; width: 10000px; height: 420px;
+}
+/*每个推荐位样式*/
+.recommends > div {
+	position: relative; float: left;
+	width: 216px; height: 407px; margin-right: 7px;
+}
+/*专门给下发的图片设置样式*/
+.recommend_span {
+	position: absolute;
+	left: 0px; top: 0px; width: 216px; height: 407px;
+}
+/*小推荐位单独的样式*/
+.recommend_small_0 {
+	position: absolute;
+	left: 0px; top: 0px;width: 216px; height: 228px;
+}
+.recommend_small_1 {
+	position: absolute;
+	left: 0px; top: 235px; width: 216px; height: 172px;
+}
+/*第一推荐位*/
+.recommends > div.recommend_first {
+	left: 0px; top: 7px; width: 322px; height: 172px;
+}
+.btn_focus_recommend_first {
+	position: absolute; 
+	left: -3px; top: 30px; width: 329px; height: 146px;
+	background-image: url(../images/recommend_first_focus.png);
+}
+.btn_focus_recommend_video {	
+	position: absolute;
+	left: -3px; top: 154px; width: 329px; height: 250px;
+	background-image: url(../images/recommend_video_focus.png);
+}
+
+.recommend_video_txt {
+	position: absolute; overflow: hidden;
+	left: 7px; top: 367px; width: 278px; height: 30px; line-height: 30px;
+	font-family: "黑体"; font-size: 20px; text-align: center; color: #FEFFFF;
+	border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+}
+
+/*大推荐位单独的样式*/
+.recommend_big span {
+	position: absolute; visibility: hidden;
+	left: 0px; top: 0px; width: 439px; height: 407px;
+}
+.recommend_big span.recommend_big_show {
+	visibility: visible;
+}
+/*大推荐位右下方单独的焦点*/
+.recommend_big ul {
+	position: absolute;
+	left: 331px; top: 362px; width: 110px;
+}
+.recommend_big li {
+	position: relative; display: inline-block;
+	width: 12px; height: 11px; margin-right: 4px;
+	background-image: url(../images/recommend/recommend_dian_blur.png);	
+}
+.recommend_big li.recommend_dian {
+	width: 15px; height: 15px; top: 2px;
+	background-image: url(../images/recommend/recommend_dian_focus.png);
+}
+
+/*推荐位选中样式*/
+.btn_focus_recommend_middle {
+	position: absolute; 
+	left: -7px; top: 31px; width: 230px; height: 380px;
+	background-image: url(../images/recommend/recommend_middle_focus.png);
+}
+.btn_focus_recommend_small_0 {
+	position: absolute; 
+	left: -7px; top: 31px; width: 230px; height: 201px;
+	background-image: url(../images/recommend/recommend_small_focus.png);
+}
+.btn_focus_recommend_small_1 {
+	position: absolute;
+	left: -7px; top: -25px; width: 230px; height: 201px;
+	background-image: url(../images/recommend/recommend_small_focus.png);
+}
+.btn_focus_recommend_big {
+	position: absolute; 
+	left: -7px; top: 31px; width: 454px; height: 380px;
+	background-image: url(../images/recommend/recommend_big_focus.png);
+}
+/*推荐位文字样式*/
+.recommend_txt {
+	position: absolute; overflow: hidden;
+	left: 3px; bottom: 3px; width: 210px; height: 30px; line-height: 30px;
+	font-family: "黑体"; font-size: 20px; text-align: center;
+	background-color: rgba(0,0,0,0.6); color: #FEFFFF;
+	border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+}
+
+
+
+/*左下角IP形象入口*/
+#animator {
+	position: absolute;
+	left: 0px; top: 505px; width: 215px; height: 215px;
+}
+#animators {
+	position: absolute; overflow: hidden; visibility: hidden;
+	left: 0px; top: 505px; width: 215px; height: 215px;
+	/*background-image: url(../images/ip_first.gif);*/
+}
+.animators {
+	position: absolute;
+	left: 0px; top: 0px; width: 215px;
+}
+.animators div {
+	position: relative;
+	width: 215px; height: 215px;
+}
+
+
+.btn_focus_ip_first {
+	position: absolute; z-index: 100;
+	left: 135px; top: 595px; width: 120px; height: 110px;
+	background-image: url(../images/ip_first_focus.gif);
+}
+
+/*全部的IP*/
+#ips {
+	position: absolute;
+	left: 205px; top: 494px; width: 1075px; height: 226px; overflow: hidden;
+}
+/*全部的IP*/
+.ips {
+	position: absolute;
+	left: 0px; top: 40px; width: 11075px; height: 186px;
+}
+
+/*每个IP对应的div*/
+.ips > div {
+	position: relative; float: left;
+	left: 0px; top: 0px; width: 140px; height: 186px; margin-right: 3px;
+}
+
+/*IP*/
+.ip {
+	position: absolute;
+	left: 10px; top: 37px; width: 120px; height: 120px;
+}
+
+/*IP背景气泡*/
+.ips > div > div:nth-child(3n+1) {
+	position: absolute; z-index: 0;
+	left: 10px; top: 37px; width: 121px; height: 121px;
+	background-image: url(../images/ip/bubble.png);
+}
+
+/*叶子背景*/
+.ips > div > div:nth-child(3n+2) {
+	position: absolute; z-index: 1;
+	left: 0px; top: 91px; width: 140px; height: 95px;
+	background-image: url(../images/ip/yezi.png);
+}
+.ips > div > div.yezi {
+	background-image: url(../images/ip/yezi_focus.gif);
+}
+
+
+/*选择形象弹窗*/
+#popup {
+	position: absolute; visibility: hidden;
+	left: 0px; top: 0px; width: 1280px; height: 720px;
+	background-image: url(../images/popup/popup_bg.png);
+}
+.bear_img {
+	position: absolute;
+	left: 328px; top: 156px; width: 264px; height: 329px;
+	background-image: url(../images/popup/bear_img.png);
+}
+.rabbit_img {
+	position: absolute;
+	left: 651px; top: 156px; width: 264px; height: 329px;
+	background-image: url(../images/popup/rabbit_img.png);
+}
+.bear_name {
+	position: absolute;
+	left: 354px; top: 531px; width: 211px; height: 58px;
+	background-image: url(../images/popup/bear_name.png);
+}
+.rabbit_name {
+	position: absolute;
+	left: 681px; top: 531px; width: 211px; height: 58px;
+	background-image: url(../images/popup/rabbit_name.png);
+}
+.btn_focus_ip {
+	position: absolute;
+	left: 168px; top: 11px; width: 100px; height: 80px;
+	background-image: url(../images/focus.gif);
+}
